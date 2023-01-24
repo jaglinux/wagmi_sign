@@ -1,4 +1,5 @@
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
+import { SignMessage } from './SignMessage'
 
 export function Connect() {
   const { connector, isConnected } = useAccount()
@@ -23,6 +24,7 @@ export function Connect() {
               {isLoading && x.id === pendingConnector?.id && ' (connecting)'}
             </button>
           ))}
+        <SignMessage/>
       </div>
 
       {error && <div>{error.message}</div>}

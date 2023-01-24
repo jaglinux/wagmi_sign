@@ -13,8 +13,8 @@ function Page() {
 
       {isConnected && (
         <>
-          <Account />
-          <NetworkSwitcher />
+          {/* <Account />
+          <NetworkSwitcher /> */}
         </>
       )}
     </>
